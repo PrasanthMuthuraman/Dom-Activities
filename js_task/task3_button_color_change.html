@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button id="button" style="background-color: red;">Button1</button>
+<button id="button2"  onclick="buttonChange()">ON</button>
+
+
+
+
+
+
+
+    <script>
+        var buttonStatus="off"
+ function buttonChange() {
+var onOffButton=document.getElementById("button2")
+ var mainButton=document.getElementById("button")
+ if(buttonStatus=="off"){
+    mainButton.style.backgroundColor="green";
+    onOffButton.textContent="OFF";
+    buttonStatus="on";
+ }
+ else if(buttonStatus=="on"){
+    mainButton.style.backgroundColor="red";
+    onOffButton.textContent="ON";
+    buttonStatus="off";
+  
+}
+}
+
+
+    </script>
+</body>
+</html>
